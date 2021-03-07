@@ -4,6 +4,8 @@ import Form from "../Form/Form";
 import FormAction from "../Form/FormAction";
 import FormChecked from "../Form/FormChecked";
 import AlternativeOpcion from "../Form/AlternativeOpcion";
+import {StyleSheet } from "react-native";
+// import "./Login.css";
 
 function Login() {
     const [formData , setFormData] = useState({
@@ -17,7 +19,7 @@ function Login() {
         console.log(formData);
     }
     return(
-        <Form titulo="Ingresar" >
+        <Form titulo="Ingresar" style={styles.centrar} >
             <FormField 
             caption="Usuario"
             type="text"
@@ -63,13 +65,18 @@ function Login() {
             <AlternativeOpcion
                 opcion ="Inicia Seción"
             >
-
             </AlternativeOpcion>
-            
-            
+  
         </Form>
     )
-    
+  
 }
+const styles = StyleSheet.create({
+    centrar: {
+      marginLeft: "auto",
+      marginRight: "auto",
+      backgroundColor: "#red"
 
+    }
+});
 export default Login;

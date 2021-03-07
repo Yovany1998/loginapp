@@ -1,22 +1,34 @@
 import './App.css';
-import  Login from "./components/Login/Login";
+import BrandHeader from './components/BrandHeader/BrandHeader';
+import  Login from './components/Login/Login';
+import Home from './components/Pages/Home';
+import Todo from './components/Pages/Todo/Todo';
+
+// import  Login from './components/Login/Login';
+
+
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+
 function App() {
-
-  const styles = [
-    "App", "flex", "justify-center","items-center","p-5"
-  ]
-
   return (
-    <div className={styles.join(" ")}>
-      
-      <Login>
-
-      </Login>
-    </div>
+    <Router>
+      <section>
+        <BrandHeader></BrandHeader>
+        <Switch>
+          <Route path="/" exact>
+              <Home />
+          </Route>
+          <Route path="/todos" exact>
+            <Todo />
+          </Route>
+          <Route path="/login" exact>
+              <Login></Login>
+          </Route>
+        </Switch>
+      </section>
+    </Router>
   );
-
-  
-
 }
 
 export default App;
