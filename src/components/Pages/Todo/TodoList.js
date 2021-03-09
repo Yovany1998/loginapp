@@ -30,6 +30,7 @@ function TodoList({todos, doneHandler, deleteHandler}){
         doneHandler={doneHandler}
         deleteHandler={deleteHandler}
       />
+    
     )
   });
   return (

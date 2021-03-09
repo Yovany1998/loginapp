@@ -14,11 +14,12 @@ function FormAction({caption, onClick}){
     "rounded-lg",
     "text-white",
     "text-indigo-700",
-    "bg-indigo-100",
-    "hover:bg-indigo-200",
+    "bg-red-100",
+    "hover:bg-red-200",
     "md:py-4",
     "md:text-lg",
-    "md:px-10"
+    "md:px-10",
+
   ];
   return(
     <button

@@ -1,9 +1,12 @@
 function Home(){
   return (
-    <section>
-      <h1>Todo WApp V1</h1>
+    <div style={{backgroundColor: "#c39bd3"}}> 
+ <section>
+      <h1>Esta es la pagina de inicio</h1>
     </section>
-  );
+    </div>
+      );
+   
 }
 
 export default Home;

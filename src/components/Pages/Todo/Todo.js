@@ -43,7 +43,9 @@ function Todo(){
   }
   const tmpTodos = todoData.todos.map( (o)=>{return JSON.stringify(o)} ).join(" | ");
   return (
-    <section>
+    <div style={{backgroundColor: "#c39bd3 "}}> 
+
+    <section  >
      <NewTodo
       onChange={onChange}
       value={todoData.newTodo}
@@ -56,6 +58,7 @@ function Todo(){
         deleteHandler={deleteHandler}
       ></TodoList>
     </section>
+    </div>
   )
 }
 

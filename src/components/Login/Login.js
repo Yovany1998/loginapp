@@ -18,8 +18,14 @@ function Login() {
         setFormData({...formData, [name]:value, [name+"Error"]:console.error});
         console.log(formData);
     }
+    const cen ={
+        marginleft: "auto",
+        marginright: "auto",
+        backgroundcolor: "black",
+    }
+    
     return(
-        <Form titulo="Ingresar" style={styles.centrar} >
+        <Form titulo="Ingresar" style={cen} >
             <FormField 
             caption="Usuario"
             type="text"
